@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="search">
+  <p>BY TITLE</p>
+  <form action="/movie">
+    <input type="text" name="movie">
+    <button>SEARCH</button>
+  </form>
+</div>
+<div class="search">
+  <p>BY SEARCH</p>
+  <form action="/search">
+    <input type="text" name="movie_search">
+    <button>SEARCH</button>
+  </form>
+</div>
+
+{% endblock %}

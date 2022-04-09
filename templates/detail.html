@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+  <h1>{{dict['title']}}</h1>
+  <p>This movie was released in {{dict['year']}}</p>
+  <div id="imgs">
+    <img src="{{ dict['img_url']}}">
+    <div id="rate">
+      <h1 id="star">
+        <span class="star5_rating" data-rate="{{dict['star-rating']}}"></span>
+      </h1>
+      <h1>{{ dict['rating'] }}</h1>
+    </div>
+  </div>
+
+
+
+{% endblock %}

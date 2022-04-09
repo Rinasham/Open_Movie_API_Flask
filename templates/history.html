@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h1>SEARCH HISTORY</h1>
+
+{% for line in lines: %}
+    <p><a href="/movie?movie={{ line.rstrip() }}">{{ line.rstrip() }}</a></p>
+{% endfor %}
+
+{% endblock %}
